@@ -1,5 +1,5 @@
 'use strict';
-
+import _ from 'lodash';
 import constant from 'lodash/constant';
 import isArray from 'lodash/isArray';
 import pick from 'lodash/pick';
