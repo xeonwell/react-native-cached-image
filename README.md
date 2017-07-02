@@ -2,6 +2,8 @@
 
 # react-native-cached-image
 CachedImage component for react-native
+修改：
+对defaultSource支持更完善；加入image图片类型判断，下载失败时显示defaultSource
 
 This package is greatly inspired by [@jayesbe](https://github.com/jayesbe)'s amazing [react-native-cacheable-image](https://github.com/jayesbe/react-native-cacheable-image) but adds some functionality that we were missing when trying to handle caching images in our react-native app.
 
