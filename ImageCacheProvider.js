@@ -138,7 +138,8 @@ function downloadImage(fromUrl, toFile, headers = {}) {
         .config({path: tmpFile})
         .fetch('GET', fromUrl, headers)
         .then(res => {
-          if (Math.floor(res.respInfo.status / 100) !== 2 || res.respInfo.respType !== 'blob') {
+          // if (Math.floor(res.respInfo.status / 100) !== 2 || res.respInfo.respType !== 'blob') {
+          if (Math.floor(res.respInfo.status / 100) !== 2) {
             throw new Error('Failed to successfully download image');
           }
           //The download is complete and rename the temporary file
